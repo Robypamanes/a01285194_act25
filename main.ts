@@ -1,6 +1,6 @@
 input.onPinPressed(TouchPin.P0, function () {
-    x = 4
     y = 0
+    x = 4
     for (let index = 0; index < 5; index++) {
         led.plot(x, y)
         x += -1
@@ -27,8 +27,8 @@ input.onPinPressed(TouchPin.P1, function () {
     }
 })
 let counter = 0
-let y = 0
 let x = 0
+let y = 0
 let sprite = game.createSprite(1, 3)
 basic.forever(function () {
     while (input.buttonIsPressed(Button.B)) {
